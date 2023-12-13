@@ -16,18 +16,18 @@
             </form>
         </div>
 
-        <% if(movieData) { %>
+        <% if(movieDetails) { %>
         <div class="result-container">
             <ul class="movie-data-list">
-                <li><span class="bold">Title: </span><%= movieData.title %> </li>
-                <li><span class="bold">Year:  </span> <%= movieData.year %></li>
-                <li><span class="bold">Genres:  </span> <%= movieData.genres %></li>
-                <li><span class="bold">Overview: </span> <%= movieData.overview %>  </li>
+                <li><span class="bold">Title: </span><%= movieDetails.title %> </li>
+                <li><span class="bold">Year:  </span> <%= movieDetails.year %></li>
+                <li><span class="bold">Genres:  </span> <%= movieDetails.genres %></li>
+                <li><span class="bold">Overview: </span> <%= movieDetails.overview %>  </li>
 
             </ul>
 
             <div class="image-container">
-                <img src="<%= movieData.posterUrl %>" alt="">
+                <img src="<%= movieDetails.posterUrl %>" alt="">
             </div>
         </div>
 
