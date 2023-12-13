@@ -43,6 +43,7 @@ app.post('/search', (req, res) => {
 
             genresToDisplay = genresToDisplay.slice(0, -2) + '.';
             
+            
             let movieObject = {
                 title: general.original_title,
                 year: new Date(general.release_date).getFullYear(),
